@@ -1,3 +1,41 @@
 * {
   box-sizing: border-box;
 }
+
+.Bar {
+  color: #fff;
+  width: 100%;
+}
+
+.Header {
+  background-color: #253141;
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  &__list{
+    height: 20px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__userName {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__List {
+    display: flex;
+    justify-content: end;
+  }
+  &__select {
+    margin-left: 5px;
+    a {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+}
+
+.list{
+  color: black;
+}
