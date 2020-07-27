@@ -1,0 +1,2 @@
+class Aera < ApplicationRecord
+end
