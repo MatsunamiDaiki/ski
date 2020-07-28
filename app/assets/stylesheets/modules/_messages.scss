@@ -3,21 +3,31 @@
 }
 
 .Bar {
-  color: #fff;
+  color:black;
   width: 100%;
 }
 
 .Header {
-  background-color: #253141;
+  background-color:#BBFFFF;
   height: 100px;
   padding: 0 20px;
   display: flex;
   align-items: center;
+  &__title{
+  position: relative;
+  padding: 0.1em 0.5em;
+  background: -webkit-linear-gradient(to right, rgb(255, 186, 115), transparent);
+  background: linear-gradient(to right, rgb(255, 186, 115), transparent);
+  color: #545454;
+  font-size: 30px;
+  
+  }
   &__list{
     height: 20px;
     width: 260px;
     display: flex;
     justify-content: space-between;
+    margin-left: 700px;
   }
   &__userName {
     font-size: 16px;
@@ -30,7 +40,7 @@
   &__select {
     margin-left: 5px;
     a {
-      color: #fff;
+      color:black;
       font-size: 16px;
     }
   }
