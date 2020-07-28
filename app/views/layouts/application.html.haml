@@ -11,6 +11,8 @@
 
   .Bar
     .Header
+      .Header__title
+        Enjoy The Winter   
       .Header__list
         -if user_signed_in?
           %h3.Header__userName
@@ -22,6 +24,7 @@
               = link_to "編集", edit_user_path(current_user)     
             %li.Header__select
               = link_to "ログアウト", destroy_user_session_path, method: :delete
+           
         -else  
           %ul.Header__List
             %li.Header__select
