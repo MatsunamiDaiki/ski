@@ -38,10 +38,35 @@
 
 .list{
   color: black;
-  margin: 40px 40px;
+  margin: 40px 20px;
+  height: calc(100vh - 100px);
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
 }
+
+
+.listbox{
+  margin-bottom: 45px;
+  width: 80%;
+  border: double 5px #4ec4d3;
+}
+
+.listname{
+  font-size: 22px;
+}
+
+.listinfo{
+  display: flex;
+}
+
+.listprice{
+  margin-left: 15px;
+}
+
+
+
+
 
 

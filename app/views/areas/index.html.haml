@@ -4,18 +4,16 @@
       .listname
         =area.name
       .listaddres
-        =area.addres
+        ="住所: #{area.addres}"
       .listinfo
-        .listinfo__tel
-          =area.tel
+        .listinfotel
+          ="TEL: #{area.tel}"
         .listprice
           .listprice__adult
-            =area.adult_price
-            円
+            ="大人: #{area.adult_price}円"
           .listprice__child
-            =area.child_price
-            円
-        .list_inter
-          = link_to 'レビューへ', area_path(area.id)  
+            ="小人: #{area.child_price}円"
+      .list_inter
+        = link_to 'レビューへ', area_path(area.id)  
 
 
