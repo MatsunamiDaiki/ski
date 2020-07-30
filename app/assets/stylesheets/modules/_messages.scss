@@ -77,11 +77,11 @@
 
 .all{
   display: flex;
+  height: calc(100vh - 100px);
 }
 
 .sidebar{
   background-color: #D9E5FF;
-  height: 100vh;
   padding: 0 20px;
   overflow: scroll;
   width: 400px;
