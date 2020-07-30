@@ -1,0 +1,18 @@
+.listbox
+  .listname
+    =area.name
+  .listimage
+    =area.image  
+  .listaddres
+    ="住所: #{area.addres}"
+  .listinfo
+    .listinfotel
+      ="TEL: #{area.tel}"
+    .listprice
+      .listprice__adult
+        ="大人: #{area.adult_price}円"
+      .listprice__child
+        ="小人: #{area.child_price}円"   
+  .list_enter
+    = link_to 'レビューへ', area_path(area.id)  
+    

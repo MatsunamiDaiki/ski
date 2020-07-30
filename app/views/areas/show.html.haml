@@ -1,18 +1,30 @@
-.all
-  .listname
-    =@area.name 
-  .container
-  - if current_user
-    = form_with(model: [@area, @comment], local: true) do |form|
-      = form.text_area :text, placeholder: "コメントする", rows: "2"
-      = form.submit "SEND"
-  - else
-    %strong
-      %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
-  .comments
-    %h4 ＜コメント一覧＞
-    - if @comments
-      - @comments.each do |comment|
-        =comment.user.name
-        = comment.text
-  
+.all  
+  .sidebar
+    .box
+      .sidename
+        =@area.name
+      .sideaddres
+        ="住所: #{@area.addres}"
+      .sidetel
+        ="TEL: #{@area.tel}"
+      .sideadult
+        ="大人: #{@area.adult_price}円"
+      .pricechild
+        ="小人: #{@area.child_price}円"   
+  .commentsfield
+    .commentbox
+      .commenttop
+        %h4 ＜レビュー 一覧＞
+      - if @comments
+        - @comments.each do |comment|
+          .commnetname
+            ="ユーザー名: #{comment.user.name}"
+          .commentdate  
+            = comment.created_at.strftime("%Y年%m月%d日 %H時%M分")
+          .commentcontent  
+            = comment.text
+    - if current_user
+      .form
+        = form_with(model: [@area, @comment], local: true) do |form|
+          = form.text_area :text, placeholder: "レビュー投稿", rows: "2"
+          = form.submit "SEND"

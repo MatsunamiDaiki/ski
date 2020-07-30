@@ -9,5 +9,8 @@ class AreasController < ApplicationController
     @comments = @area.comments.includes(:user)
   end
 
+  def search
+    @areas = Area.search(params[:keyword])
+  end
   
 end
