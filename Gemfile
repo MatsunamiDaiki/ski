@@ -60,4 +60,4 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'jquery-rails'
 gem 'fog-aws'
-gem 'bootstrap', '~> 4.1.1'
+gem "bootstrap-sass", "~>3.3.6"
