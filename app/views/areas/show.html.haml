@@ -12,18 +12,18 @@
       .pricechild
         ="小人: #{@area.child_price}円"   
   .commentsfield
+    .commenttop
+      %h4 ＜レビュー 一覧＞
     .commentbox
-      .commenttop
-        %h4 ＜レビュー 一覧＞
-      .comments  
       - if @comments
         - @comments.each do |comment|
-          .commnetname
-            ="ユーザー名: #{comment.user.name}"
-          .commentdate  
-            = comment.created_at.strftime("%Y年%m月%d日 %H時%M分")
-          .commentcontent  
-            = comment.text
+          .commentinfo
+            .commnetname
+              ="ユーザー名: #{comment.user.name}"
+            .commentdate  
+              = comment.created_at.strftime("%Y年%m月%d日 %H時%M分")
+            .commentcontent  
+              = comment.text
     - if current_user
       .form
         = form_with(model: [@area, @comment], local: true, id: "new_comment") do |form|
