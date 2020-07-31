@@ -6,7 +6,7 @@ class AreasController < ApplicationController
   def show
     @area = Area.find(params[:id])
     @comment = Comment.new
-    @comments = @area.comments.includes(:user)
+    @comments = @area.comments.includes(:user).order("created_at DESC")
   end
 
   def search
