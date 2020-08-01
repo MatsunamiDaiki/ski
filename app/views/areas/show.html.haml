@@ -11,6 +11,10 @@
         ="大人: #{@area.adult_price}円"
       .pricechild
         ="小人: #{@area.child_price}円"   
+      .form
+        = form_with(model: [@area, @comment], local: true, id: "new_comment") do |form|
+          = form.text_area :text, placeholder: "レビュー投稿", rows: "2" ,class: "textbox"
+          = form.submit "投稿", class: "form__submit"  
   .commentsfield
     .commenttop
       %h4 ＜レビュー 一覧＞
@@ -24,8 +28,8 @@
               = comment.created_at.strftime("%Y年%m月%d日 %H時%M分")
             .commentcontent  
               = comment.text
-    - if current_user
-      .form
-        = form_with(model: [@area, @comment], local: true, id: "new_comment") do |form|
-          = form.text_area :text, placeholder: "レビュー投稿", rows: "2" ,class: "textbox"
-          = form.submit "SEND", class: "form__submit"
+  -# - if current_user
+  -# .form
+  -#   = form_with(model: [@area, @comment], local: true, id: "new_comment") do |form|
+  -#     = form.text_area :text, placeholder: "レビュー投稿", rows: "2" ,class: "textbox"
+  -#     = form.submit "投稿", class: "form__submit"

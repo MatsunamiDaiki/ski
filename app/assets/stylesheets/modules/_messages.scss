@@ -20,30 +20,22 @@
   background: linear-gradient(to right, rgb(255, 186, 115), transparent);
   color: #545454;
   font-size: 30px;
+  width: 100%;
   }
-  &__list{
+  .Header__List{
     height: 20px;
     width: 260px;
     display: flex;
     justify-content: space-between;
-    margin-left: 700px;
-  }
-  &__userName {
+    width: 100%;
+  } 
+  .Header__name{
     font-size: 16px;
     font-weight: bold;
   }
-  &__List {
-    display: flex;
-    justify-content: end;
-  }
-  &__select {
-    margin-left: 5px;
-    a {
-      color:black;
-      font-size: 16px;
-    }
-  }
+
 }
+
 
 .list{
   color: black;
@@ -64,13 +56,24 @@
 
 .listname{
   font-size: 22px;
+  margin-left: 20px;
+}
+
+.listaddres{
+  margin-left: 20px;
 }
 
 .listinfo{
   display: flex;
+  margin-left: 20px;
+  
 }
 
 .listprice{
+  margin-left: 15px;
+}
+
+.list_enter{
   margin-left: 15px;
 }
 
@@ -85,6 +88,13 @@
   padding: 0 20px;
   overflow: scroll;
   width: 400px;
+  .form{
+    background-color: #dddddd;
+    box-sizing: border-box;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .box{
@@ -111,20 +121,23 @@
   margin: 10px 0;
 }
 
+
 .form{
   background-color: #dddddd;
   box-sizing: border-box;
   height: 90px;
-  padding: 20px 50px 0 40px;
   position: absolute;
   bottom: 0;
-  width: calc(100vw - 400px);
 }
+
 
 
 .commentsfield{
   width: calc(100vw - 400px);
   position: relative;
+  height: calc(100vh - 100px);
+  overflow: scroll;
+  width: 100%;
 }
 
 .commenttop{
@@ -135,9 +148,11 @@
   box-sizing: border-box;
   padding: 35px 40px 0;
   height: calc(100vh - 100px);
-  overflow: scroll;
 }
 .commentinfo{
    margin-bottom: 10px;
  }
+
+
+
 
