@@ -13,17 +13,15 @@
     .Header
       .Header__title
         Enjoy The Winter   
-      .Header__list
-        -if user_signed_in?
-          %h3.Header__userName
-            =current_user.name
-          %ul.Header__List
-            %li.Header__select
-              = link_to "一覧へ", areas_path(current_user)   
-            %li.Header__select
-              = link_to "編集", edit_user_path(current_user)     
-            %li.Header__select
-              = link_to "ログアウト", destroy_user_session_path, method: :delete
+      %ul.Header__List
+        %li.Header__name
+          =current_user.name
+        %li.Header__select
+          = link_to "一覧へ", areas_path(current_user)   
+        %li.Header__select
+          = link_to "編集", edit_user_path(current_user)     
+        %li.Header__select
+          = link_to "ログアウト", destroy_user_session_path, method: :delete
            
        
     = yield
