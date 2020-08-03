@@ -8,20 +8,21 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application'
   %body
-
+  = render 'layouts/notifications'
   .Bar
     .Header
       .Header__title
-        Enjoy The Winter   
-      %ul.Header__List
-        %li.Header__name
-          =current_user.name
-        %li.Header__select
-          = link_to "一覧へ", areas_path(current_user)   
-        %li.Header__select
-          = link_to "編集", edit_user_path(current_user)     
-        %li.Header__select
-          = link_to "ログアウト", destroy_user_session_path, method: :delete
+        Enjoy The Winter  
+      -if user_signed_in? 
+        %ul.Header__List 
+          %li.Header__name
+            =current_user.name
+          %li.Header__select
+            = link_to "一覧へ", areas_path(current_user)   
+          %li.Header__select
+            = link_to "編集", edit_user_path(current_user)     
+          %li.Header__select
+            = link_to "ログアウト", destroy_user_session_path, method: :delete
            
        
     = yield
