@@ -30,6 +30,7 @@ $(function(){
       $('.commentbox').append(html);
       $('.textbox').val('');
       $('.form__submit').prop('disabled', false);
+      // $('commentbox').animate({ scrollTop: $('commentbox')[0].scrollHeight});
     })
     .fail(function(){
       alert('error')

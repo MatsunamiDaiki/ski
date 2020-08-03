@@ -39,7 +39,7 @@
 
 .list{
   color: black;
-  margin: 40px 20px;
+  margin: 0 20px;
   height: calc(100vh - 100px);
   display: flex;
   align-items: center;
@@ -85,20 +85,28 @@
 
 .sidebar{
   background-color: #D9E5FF;
-  padding: 0 20px;
-  overflow: scroll;
   width: 400px;
   .form{
-    background-color: #dddddd;
     box-sizing: border-box;
-    height: 90px;
     position: absolute;
     bottom: 0;
+    height: 150px;
+    padding:10px 5px;
+    justify-content: center;
+    align-items: center;
+    
+    .textbox{
+      width: 230px;
+      height: 120px;
+    }
+    .form__submit{
+      
+    }
   }
 }
 
 .box{
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 
 .sidename{
@@ -107,6 +115,8 @@
 
 .sideaddres{
   margin: 10px 0;
+  font-size: 15px;
+  width: 100%;
 }
 
 .sidetel{
@@ -122,22 +132,14 @@
 }
 
 
-.form{
-  background-color: #dddddd;
-  box-sizing: border-box;
-  height: 90px;
-  position: absolute;
-  bottom: 0;
-}
 
 
 
 .commentsfield{
   width: calc(100vw - 400px);
-  position: relative;
   height: calc(100vh - 100px);
-  overflow: scroll;
   width: 100%;
+  background-color: #fafafa;
 }
 
 .commenttop{
@@ -148,11 +150,18 @@
   box-sizing: border-box;
   padding: 35px 40px 0;
   height: calc(100vh - 100px);
+  overflow: scroll;
 }
 .commentinfo{
    margin-bottom: 10px;
  }
 
+ .commnetname{
+   font-size: 15px;
+ }
+ .commentdate{
+   font-size: 10px;
+ }
 
 
 
