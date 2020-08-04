@@ -27,10 +27,10 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data);
-      $('.commentbox').append(html);
+      $('.commentbox').prepend(html);
       $('.textbox').val('');
       $('.form__submit').prop('disabled', false);
-      // $('commentbox').animate({ scrollTop: $('commentbox')[0].scrollHeight});
+      $('commentbox').animate({ scrollTop: $('commentbox')[0].scrollHeight});
     })
     .fail(function(){
       alert('error')
