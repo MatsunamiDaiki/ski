@@ -1,7 +1,6 @@
+= form_with(url: search_areas_path, local: true, method: :get, class: "search-form") do |form|
+  = form.text_field :keyword, placeholder: "スキー場を検索する", class: "search-input"
+  = form.submit "検索", class: "search-btn"
 .list
-  = form_with(url: search_areas_path, local: true, method: :get, class: "search-form") do |form|
-    = form.text_field :keyword, placeholder: "スキー場を検索する", class: "search-input"
-    = form.submit "検索", class: "search-btn"
   -@areas.each do |area| 
     =render partial: "area",locals: {area: area}
-    

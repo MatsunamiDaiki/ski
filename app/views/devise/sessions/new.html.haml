@@ -2,8 +2,13 @@
   .AccountPage
     
     .AccountPage__title
-      %h2ログイン画面
+      %h2ログイン画面 
       = render "devise/shared/links"
+      .introduce  
+      このサイトであなたが気になるスキー場のレビューを見ることができます。
+      また、あなたがスキー場で体験したエピソードを書き込むことができます。
+      
+      
     .AccountPage__form
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .FormField

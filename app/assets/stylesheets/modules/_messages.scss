@@ -35,7 +35,9 @@
   }
 
 }
-
+.search-form{
+  text-align:  center;    
+}
 
 .list{
   color: black;
@@ -86,6 +88,7 @@
 .sidebar{
   background-color: #D9E5FF;
   width: 400px;
+  overflow: scroll;
   .form{
     box-sizing: border-box;
     position: absolute;
