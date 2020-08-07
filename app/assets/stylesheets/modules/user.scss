@@ -1,8 +1,6 @@
 .AccountPage {
   width: 980px;
-  margin: 60px auto;
   padding: 60px;
-  
   display: flex;
   justify-content: space-between;
 }
@@ -11,7 +9,7 @@
   background-image: url('/images/ski.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 1500px;
   height: calc(100vh - 100px);
   
 }
@@ -22,6 +20,10 @@
   background-size: cover;
   width: 100%;
   height: calc(100vh - 100px);
+}
+
+.introduce{
+  width: 400px;
 }
 
 .AccountPage__title {
