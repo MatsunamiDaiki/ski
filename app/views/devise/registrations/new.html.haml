@@ -4,6 +4,9 @@
       %h2 新規アカウント
       
       = render "devise/shared/links"
+      .introduce  
+        %br このサイトであなたが気になるスキー場のレビューを見ることができます。
+        %br また、あなたがスキー場で体験したエピソードを書き込むことができます。
     .AccountPage__form
       = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
         = devise_error_messages!
