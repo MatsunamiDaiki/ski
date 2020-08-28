@@ -1,7 +1,153 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+areas=Area.create!(
+  [
+    {
+      name: 'たんばらスキーパーク',
+      addres: '〒378-0071 群馬県沼田市玉原高原',
+      tel: '0278-23-9311',
+      adult_price: '4700',
+      child_price: '3200'
+    },
+    {
+      name: '丸沼高原スキー場',
+      addres: '〒378-0497 群馬県利根郡片品村大字東小川４６５８−５８',
+      tel: '0278-58-2211',
+      adult_price: '4300',
+      child_price: '3800'
+    },
+    {
+      name: 'ハンターマウンテン塩原',
+      addres: '〒329-2922 栃木県那須塩原市湯本塩原１１５',
+      tel: '0287-32-4580',
+      adult_price: '4900',
+      child_price: '3900'
+    },
+
+    {
+      name: '川場スキー場',
+      addres: '〒378-0101 群馬県利根郡川場村大字谷地２７５５−２',
+      tel: '0278-52-3345',
+      adult_price: '4900',
+      child_price: '3600'
+    },
+
+    {
+      name: 'マウントジーンズ那須',
+      addres: '〒329-3223 栃木県那須郡那須町大字大島',
+      tel: '0287-77-2300',
+      adult_price: '4500',
+      child_price: '3600'
+    },
+
+    {
+      name: '四季の森 ホワイトワールド尾瀬岩鞍',
+      addres: '〒378-0412 群馬県利根郡利根郡片品村大字土出２６０９',
+      tel: '0278-58-7777',
+      adult_price: '5000',
+      child_price: '3900'
+    },
+
+    {
+      name: '奥利根スノーパーク',
+      addres: '〒379-1724 群馬県利根郡みなかみ町向山',
+      tel: '0278-72-8101',
+      adult_price: '5100',
+      child_price: '4000'
+    },
+
+    {
+      name: 'エーデルワイススキーリゾート',
+      addres: '〒321-2612 栃木県日光市川治温泉高原鶏頂山',
+      tel: '0288-78-0786',
+      adult_price: '4600',
+      child_price: '3200'
+    },
+
+    {
+      name: 'カムイみさかスキー場',
+      addres: '〒406-0813 山梨県笛吹市御坂町上黒駒５３２１−１',
+      tel: '055-264-2614',
+      adult_price: '3700',
+      child_price: '2200'
+    },
+
+    {
+      name: 'ふじてんスノーリゾート',
+      addres: '〒378-0071 群馬県沼田市玉原高原',
+      tel: '0278-23-9311',
+      adult_price: '4500',
+      child_price: '3600'
+    },
+
+    {
+      name: 'ノルン水上スキー場',
+      addres: '〒379-1614 群馬県利根郡みなかみ町寺間４７９−１３９',
+      tel: '0278-72-6688',
+      adult_price: '4200',
+      child_price: '3400'
+    },
+
+    {
+      name: 'オグナほたかスキー場',
+      addres: '〒378-0408 群馬県利根郡片品村大字花咲 武尊山',
+      tel: '0278-58-2133',
+      adult_price: '4300',
+      child_price: '3000'
+    },
+
+    {
+      name: '奥利根スノーパーク',
+      addres: '〒379-1724 群馬県利根郡みなかみ町向山',
+      tel: '0287-32-4580',
+      adult_price: '6200',
+      child_price: '5000'
+    },
+
+    {
+      name: 'サンメドウズ清里スキー場',
+      addres: '〒407-0311 山梨県北杜市大泉町西井出８２４０−１',
+      tel: '0551-48-4111',
+      adult_price: '4200',
+      child_price: '3200'
+    },
+
+    {
+      name: '佐久スキーガーデンパラダ',
+      addres: '〒385-0003 長野県佐久市下平尾２６８１',
+      tel: '0267-67-8100',
+      adult_price: '4400',
+      child_price: '3300'
+    },
+
+    {
+      name: 'ホワイトワールド尾瀬岩鞍スキー場',
+      addres: '〒378-0412 群馬県利根郡利根郡片品村大字土出２６０９',
+      tel: '0278-23-9311',
+      adult_price: '5000',
+      child_price: '3900'
+    },
+
+    {
+      name: 'スノーパーク尾瀬戸倉スキー場',
+      addres: '利根郡 群馬県 378-0411',
+      tel: '0278-23-9311',
+      adult_price: '4700',
+      child_price: '3200'
+    },
+
+    {
+      name: '水上宝台樹スキー場',
+      addres: '〒379-1721 群馬県利根郡みなかみ町藤原３８３９−１',
+      tel: '0278-23-9311',
+      adult_price: '3600',
+      child_price: '2400'
+    },
+
+    {
+      name: '谷川岳天神平スキー場',
+      addres: '〒379-1728 群馬県利根郡みなかみ町湯檜曽湯吹山国有林',
+      tel: '0278-23-9311',
+      adult_price: '4000',
+      child_price: '2500'
+    },
+
+  ] )
